@@ -1,0 +1,33 @@
+.propertiesInfoFlex{
+    width: 420px;
+    max-width: 420px;
+    height: 90px;
+    max-height: 90px;
+    flex-direction: column;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.propertiesInfoText{
+    font-size: 16px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+
+}
+
+.propertiesSizeFlex{
+    width: 200px;
+    padding-left:"15px";
+    align-items: center;
+}
+
+.propertiesPositionFlex{
+    width: 350px;
+    padding-right:"15px";
+
+    align-items: center;
+}

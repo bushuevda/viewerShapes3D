@@ -1,0 +1,20 @@
+.addGroupText{
+    font-size: 14px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.addGroupTextHeader{
+    font-size: 18px;
+    text-align: center;
+}
+
+.addGroupSlider{
+    font-size: 24px;
+    font-style: oblique;
+}
+.addGroupPicker{
+    padding-bottom: 15px;
+}

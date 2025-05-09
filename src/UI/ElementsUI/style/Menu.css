@@ -1,0 +1,24 @@
+.propertiesFlex{
+    max-height: 690px;
+    height: 690px;
+    width: 430px;
+    overflow: auto;
+}
+
+.menuFlex{
+    flex-direction: column;
+    border-bottom: 4cm;
+    border-width: 5px;
+    border-color: black;
+    border: 5px;
+    border-style: double;
+    height: 730px;
+}
+
+.addGroupFlex{
+    position: absolute;
+    top: 390px;
+    left: 450px;
+    z-index: 1;
+    background-image: none;
+}
