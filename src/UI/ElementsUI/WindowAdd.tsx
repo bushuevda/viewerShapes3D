@@ -3,7 +3,6 @@ import {ShapeType} from '../../Store/shapeStore/reducerShapeGroup'
 import { ButtonAddGroup } from '../../Store/shapeStore/controlShapeGroups';
 import { Picker, Item, Key, Text, Flex, Slider, Button, Divider } from '@adobe/react-spectrum';
 import './style/WindowAdd.css'
-import { isVisible } from '@testing-library/user-event/dist/utils';
 import './style/Buttons.css'
 
 
@@ -74,40 +73,47 @@ export class WindowAddingGroup extends React.Component<IProps, IWindow>{
 
 
     render(): React.ReactNode {
-        return <Flex UNSAFE_style={{visibility:this.props.state_hide}} direction={"column"}>
+        return <Flex UNSAFE_style={{visibility:this.props.state_hide}}   direction={"column"} >
             <Divider size="M" />
             <Text UNSAFE_className='addGroupText addGroupTextHeader'>Add primitives group</Text>
             <Divider size="M" />
             <Flex>
-                <Text UNSAFE_className='addGroupText'>Type</Text> <Picker UNSAFE_className='addGroupPicker'  defaultSelectedKey="Box" label=" " onSelectionChange={(e) => {this.handleInputType(e)}}>    
-                                    <Item key="Box">Box</Item>
-                                    <Item key="Pyramid">Pyramid</Item>
-                            </Picker>
+                <Text UNSAFE_className='addGroupText'>Type</Text> 
+                <Picker UNSAFE_className='addGroupPicker'  defaultSelectedKey="Box" label=" " 
+                        onSelectionChange={(e) => {this.handleInputType(e)}}>    
+                        <Item key="Box">Box</Item>
+                        <Item key="Pyramid">Pyramid</Item>
+                </Picker>
             </Flex>
             <Divider size="M" />
 
             <Flex >
                 <Text UNSAFE_className='addGroupText'>Length</Text> 
-                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " defaultValue={1} onChange={(val) => {this.handleInputLength(val)}} />
+                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " 
+                        defaultValue={1} onChange={(val) => {this.handleInputLength(val)}} />
             </Flex>
             <Divider size="M" />
             <Flex>
                 <Text UNSAFE_className='addGroupText'>Width</Text> 
-                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " defaultValue={1} onChange={(val) => {this.handleInputWidth(val)}} />
+                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " 
+                        defaultValue={1} onChange={(val) => {this.handleInputWidth(val)}} />
             </Flex>
             <Divider size="M" />
             <Flex>
                 <Text UNSAFE_className='addGroupText'>Height</Text> 
-                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " defaultValue={1} onChange={(val) => {this.handleInputHeight(val)}} />
+                <Slider UNSAFE_className='addGroupSlider' minValue={1} maxValue={100} label=" " 
+                        defaultValue={1} onChange={(val) => {this.handleInputHeight(val)}} />
             </Flex>
             <Divider size="M" />
             <Flex>
                 <Text UNSAFE_className='addGroupText'>Count</Text> 
-                <Slider  UNSAFE_className='addGroupSlider' minValue={1} maxValue={100}  label=" " defaultValue={1} onChange={(val) => {this.handleInputCount(val)}} />
+                <Slider  UNSAFE_className='addGroupSlider' minValue={1} maxValue={100}  label=" " 
+                        defaultValue={1} onChange={(val) => {this.handleInputCount(val)}} />
             </Flex>
             <Divider size="M" />
             <Flex>
-                <Button UNSAFE_className='buttonsMenu' variant="primary" onPress={this.props.callbackHide}>Cancel</Button>
+                <Button UNSAFE_className='buttonsMenu' variant="primary" 
+                        onPress={this.props.callbackHide} >Cancel</Button>
                 <ButtonAddGroup type={this.state.type} height={this.state.height} length={this.state.length} width={this.state.width} count={this.state.count}></ButtonAddGroup>
             </Flex>
         </Flex>

@@ -12,13 +12,12 @@
     border-color: black;
     border: 5px;
     border-style: double;
-    height: 730px;
 }
 
 .addGroupFlex{
     position: absolute;
     top: 390px;
-    left: 450px;
+    left: 500px;
     z-index: 1;
     background-image: none;
 }

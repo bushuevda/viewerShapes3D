@@ -5,17 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import {store} from './Store/store'
+import {Provider as ProviderSpectrum, defaultTheme} from "@adobe/react-spectrum";
 
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+    <ProviderSpectrum theme={defaultTheme} colorScheme="light" height={{S: "250px", M: "640px", L: "700px", XL:"800px", XXL: "1020px"}} 
+      width={{S: "640px", M: "1000px", L:"1150px", XL:"1360px", XXL: "1900px"}}>
+      <App  />
+      </ProviderSpectrum>
     </Provider>
   </React.StrictMode>
 );

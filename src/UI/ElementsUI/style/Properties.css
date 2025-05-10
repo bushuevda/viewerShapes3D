@@ -1,8 +1,6 @@
 .propertiesInfoFlex{
     width: 420px;
-    max-width: 420px;
     height: 90px;
-    max-height: 90px;
     flex-direction: column;
     padding-top: 2px;
     padding-bottom: 2px;

@@ -36,7 +36,8 @@ export function ButtonAddGroup(props: IState) {
 */
 export function ButtonClearCanvas(){
     const dispatch = useAppDispatch();
-    return <Button UNSAFE_className='buttonsMenu buttonProperties' variant="primary" onPress={() => {dispatch(clear())}}>Clear</Button>;
+    return <Button UNSAFE_className='buttonsMenu buttonProperties' variant="primary" onPress={() => {dispatch(clear())}} 
+              left={{S: "10px", M: "10px", L:"40px", XL:"60px", XXL: "80px"}}>Clear</Button>;
 }
 
 
