@@ -2,7 +2,7 @@
 
 Download repository:
 ```
-git clone git clone https://github.com/bushuevda/viewerShapes3D.git
+git clone https://github.com/bushuevda/viewerShapes3D.git
 ```
 ```
 cd viewerShapes3D
